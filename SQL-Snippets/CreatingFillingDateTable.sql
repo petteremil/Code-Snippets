@@ -19,13 +19,6 @@ DECLARE @StartDate Date
 DECLARE @EndDate Date
 SET @StartDate = Cast('2019-01-01' As Date)
 SET @EndDate = Cast('2026-01-01' As Date)
-DECLARE @Calendar TABLE
-([Day] Int, 
- [DayName] Nvarchar(30), 
- [Month] Int, 
- [MonthName] Nvarchar(30), 
- [Year] Int
-)
 
 --Looping over dates, adding a day every turn of the wheel
 WHILE @StartDate < @EndDate
