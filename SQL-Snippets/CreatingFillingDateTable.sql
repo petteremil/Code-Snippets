@@ -1,8 +1,8 @@
 --Creating the actual table
 
-IF OBJECT_ID('[SCHEMA].[Calendar_Table]') IS NULL --If table doesn't exist
+IF OBJECT_ID('[DATABASE].[SCHEMA].[Calendar_Table]') IS NULL --If table doesn't exist
 	BEGIN
-		CREATE TABLE [SCHEMA].[Calendar_Table](
+		CREATE TABLE [DATABASE].[SCHEMA].[Calendar_Table](
 		[Day] [int] NOT NULL,
 		[Month] [int] NOT NULL,
 		[year] [int] NOT NULL,
